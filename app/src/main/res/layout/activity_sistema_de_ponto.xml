@@ -28,60 +28,72 @@
         android:text="Sistema de ponto"
         android:textSize="24sp"
         android:textStyle="bold"
+        app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view2" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/bntEntrada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="84dp"
         android:backgroundTint="#4E848F"
         android:text="Entrada no serviço"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:rippleColor="#4E848F"
         app:strokeColor="#4E848F" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnSt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#4E848F"
         android:text="Saida para almoço"
         app:cornerRadius="0dp"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="@+id/bntEntrada"
+        app:layout_constraintTop_toBottomOf="@+id/bntEntrada"
         app:rippleColor="#4E848F" />
 
     <Button
-        android:id="@+id/button7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="34dp"
+        android:id="@+id/bntRtn"
+        android:layout_width="165dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#4E848F"
         android:text="Retorno"
         app:cornerRadius="0dp"
-        app:layout_constraintStart_toStartOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/bntSs"
+        app:layout_constraintTop_toBottomOf="@+id/btnSt"
         app:rippleColor="#4E848F" />
 
     <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:id="@+id/bntSs"
+        android:layout_width="161dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#4E848F"
         android:text="Saida do serviço"
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7"
+        app:layout_constraintTop_toBottomOf="@+id/bntRtn"
         app:rippleColor="#4E848F" />
+
+    <Button
+        android:id="@+id/bntRtrn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="25dp"
+        android:text="Retornar"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/bntSs" />
 </androidx.constraintlayout.widget.ConstraintLayout>

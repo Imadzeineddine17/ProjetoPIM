@@ -12,6 +12,19 @@
         android:layout_width="356dp"
         android:layout_height="664dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="356dp"
+        android:layout_height="664dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:background="#FFFFFF"
@@ -21,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/bntExit"
         android:layout_width="190dp"
         android:layout_height="56dp"
         android:layout_marginTop="48dp"
@@ -33,20 +46,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/bntFp"
         app:rippleColor="#4E848F"
         app:strokeColor="#4E848F" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bntFp"
         android:layout_width="190dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="48dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="344dp"
         android:background="#4E848F"
         android:backgroundTint="#4E848F"
         android:foregroundTint="#4E848F"
         android:text="Folha de pagamento"
         app:iconTint="#4E848F"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +73,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Bem-Vindo, (nome)"
+        android:text="Bem-Vindo, Juliana"
         android:textSize="27sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -70,28 +84,28 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:text="Cargo:"
+        android:layout_marginTop="156dp"
+        android:layout_marginBottom="34dp"
+        android:text=" Cargo: auxiliar de T.I"
         android:textSize="20sp"
         android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.247"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="190dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="52dp"
-        android:background="#4E848F"
-        android:backgroundTint="#4E848F"
-        android:foregroundTint="#4E848F"
+        android:id="@+id/bntSdp"
+        android:layout_width="202dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="48dp"
         android:text="Sistema de ponto"
-        app:iconTint="#4E848F"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bntFp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:rippleColor="#4E848F"
-        app:strokeColor="#4E848F" />
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
